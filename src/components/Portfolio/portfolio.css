@@ -1,0 +1,142 @@
+.work__filters {
+	display: flex;
+	align-items: center;
+	column-gap: 1.875rem;
+	margin-bottom: 2.5rem;
+	flex-wrap: wrap;
+}
+
+.work__item {
+	cursor: pointer;
+	font-weight: var(--font-bold);
+}
+
+.work__item:hover {
+	color: var(--first-color);
+}
+
+.work__container {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.875rem;
+}
+
+.work__card {
+	position: relative;
+	overflow: hidden;
+	border-radius: var(--border-radius);
+	box-shadow: var(--shadow);
+}
+
+.work__thumbnail img {
+	height: 180px;
+}
+
+.work__mask {
+	background: #6c6ce5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.work__card:hover .work__mask {
+	opacity: 0.9;
+}
+
+.work__category {
+	color: #fff;
+	background-color: var(--first-color);
+	border-bottom-left-radius: 0.98rem;
+	border-bottom-right-radius: 0.98rem;
+	position: absolute;
+	top: 0;
+	left: 1.5rem;
+	font-size: var(--small-sont-size);
+	display: inline-block;
+	padding: 0.19rem 0.625rem;
+	transform: translateY(-40px);
+}
+
+.work__title {
+	color: #fff;
+	font-size: var(--h3-font-size);
+	margin: 0 0 0.98rem;
+	padding: 0 1.25rem;
+	position: absolute;
+	top: 3.75rem;
+	transform: translateY(30px);
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.work__buttons {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.work__button {
+	position: relative;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 0.75rem 2rem;
+	line-height: 1;
+	border-radius: 1.875rem;
+	box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+	border: 1px solid transparent;
+	color: var(--title-color);
+	transition: 0.3s;
+	opacity: 0;
+	font-weight: var(--font-bold);
+}
+
+.work__card:hover .work__button:hover {
+	background-color: var(--title-color);
+}
+
+.work__card:hover .work__button {
+	opacity: 1;
+	background-color: var(--first-color);
+	color: #fff;
+}
+
+.work__card:hover .work__title,
+.work__card:hover .work__category {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+	.work__filters {
+		justify-content: center;
+		row-gap: 1rem;
+	}
+
+	.work__container {
+		grid-template-columns: repeat(2, 330px);
+		justify-content: center;
+		row-gap: 1.875rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.work__container {
+		grid-template-columns: 310px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.work__container {
+		grid-template-columns: 1fr;
+	}
+}
