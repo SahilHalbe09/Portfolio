@@ -99,6 +99,10 @@
 		left: 140px;
 	}
 
+	.tooltip .tooltiptext {
+		display: none;
+	}
+
 	.show-menu {
 		left: 0;
 		position: fixed;
