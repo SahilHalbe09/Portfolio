@@ -44,6 +44,11 @@
 	.section__title {
 		text-align: center;
 	}
+
+	.skills__title {
+		font-size: 12px;
+		font-weight: 500;
+	}
 }
 
 @media screen and (max-width: 768px) {
