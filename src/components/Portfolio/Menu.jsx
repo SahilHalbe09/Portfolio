@@ -54,8 +54,8 @@ const Menu = [
 		image: Project6,
 		title: "Portfolio Website",
 		category: "Frontend",
-		live: "",
-		code: "",
+		live: "https://www.thesahildev.in/",
+		code: "https://github.com/SahilHalbe09/Portfolio",
 	},
 	{
 		id: 7,
