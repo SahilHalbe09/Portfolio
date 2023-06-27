@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/avatar-2.svg";
+import html2canvas from "html2canvas";
 
 const About = () => {
 	return (
@@ -23,7 +24,7 @@ const About = () => {
 							</a>{" "}
 							and bring your ideas to life.
 						</p>
-						<a href="" download="Resume-Sahil-Halbe" className="btn">
+						<a className="btn" href="https://www.thesahildev.in/resume-sahil-halbe.pdf" download="Sahil_Halbe_Resume">
 							Download CV
 						</a>
 					</div>
