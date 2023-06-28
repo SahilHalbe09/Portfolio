@@ -23,7 +23,7 @@ const About = () => {
 							</a>{" "}
 							and bring your ideas to life.
 						</p>
-						<a className="btn" href="resume-sahil-halbe.pdf" download="Sahil_Halbe_Resume">
+						<a className="btn" href="Sahil-Halbe.pdf" download="Sahil_Halbe_Resume">
 							Download CV
 						</a>
 					</div>
